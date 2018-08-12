@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.target.rc \
+    ims-hax.sh \
     init.qcom.devstart.sh \
     init.qcom.devwait.sh \
     init.qcom.rc \
