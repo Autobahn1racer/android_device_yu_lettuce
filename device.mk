@@ -305,11 +305,12 @@ PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
 # Telephony
-#PRODUCT_PACKAGES += \
-#    telephony-ext \
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    ims-ext-common
 #    qti-telephony-common
 
-#PRODUCT_BOOT_JARS += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
 
 # Thermals
 PRODUCT_COPY_FILES += \
