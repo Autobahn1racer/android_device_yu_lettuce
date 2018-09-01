@@ -17,7 +17,7 @@
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-PRODUCT_ENFORCE_RRO_TARGETS := framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := framework-res
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -94,8 +94,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service
 
 # Doze
-PRODUCT_PACKAGES += \
-    YUDoze
+#PRODUCT_PACKAGES += \
+#    YUDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -269,8 +269,8 @@ PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
 # Telephony
-PRODUCT_PACKAGES += qti-telephony-common
-PRODUCT_BOOT_JARS += telephony-ext
+#PRODUCT_PACKAGES += qti-telephony-common
+#PRODUCT_BOOT_JARS += telephony-ext
 
 # Thermals
 PRODUCT_COPY_FILES += \
