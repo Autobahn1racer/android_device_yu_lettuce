@@ -1,0 +1,15 @@
+# Prebuilt APKs
+
+LOCAL_PATH := $(call my-dir)
+
+# Pixel Launcher
+include $(CLEAR_VARS)
+LOCAL_MODULE := NexusLauncherPrebuilt
+LOCAL_SRC_FILES := NexusLauncherPrebuilt.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
