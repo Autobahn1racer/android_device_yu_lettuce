@@ -66,6 +66,15 @@ on post-fs
     # Allow writing to the kernel trace log.
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
 
+    # Symlink keymaster firmware to /vendor/firmware
+    mkdir /system/vendor/firmware
+    mkdir /system/vendor/firmware/keymaster
+    symlink /firmware/image/keymaster.b00 /system/vendor/firmware/keymaster/keymaster.b00
+    symlink /firmware/image/keymaster.b01 /system/vendor/firmware/keymaster/keymaster.b01
+    symlink /firmware/image/keymaster.b02 /system/vendor/firmware/keymaster/keymaster.b02
+    symlink /firmware/image/keymaster.b03 /system/vendor/firmware/keymaster/keymaster.b03
+    symlink /firmware/image/keymaster.mdt /system/vendor/firmware/keymaster/keymaster.mdt
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/fdAlbum 0770 camera camera
